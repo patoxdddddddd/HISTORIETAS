@@ -54,3 +54,84 @@ border-radius: 50%;
     opacity: 1;
   }
 }
+
+p{
+  color: black;
+}
+
+h1{
+  font-size: 2rem;
+
+}
+
+h2{
+  color: black;
+}
+
+main{
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.panel{
+   display: none; 
+  padding: 20px;
+  background-color: #e9e9f4;
+  border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+animation: faldeln 0.5s ease;
+}
+
+.panel h2{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.panel p{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button{
+  background-color: #0077b6;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3;
+}
+
+.button:hover{
+  background-color: #00a8e8;
+}
+
+#panel1:checked ~ #content-panel1,
+#panel2:checked ~ #content-panel2,
+#panel3:checked ~ #content-panel3,
+#panel4:checked ~ #content-panel4,
+#panel5:checked ~ #content-panel5{
+display: block;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translate(20px);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+input[type="radio"]{
+  display: none;
+}
